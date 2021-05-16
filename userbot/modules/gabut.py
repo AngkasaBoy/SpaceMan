@@ -101,9 +101,9 @@ async def typewriter(typew):
 async def typewriter(typew):
     typew.pattern_match.group(1)
     sleep(1)
-    await typew.edit("`Getting Information...`")
+    await typew.edit("`Mendapatkan Informasi...`")
     sleep(1)
-    await typew.edit("**PENGGUNAAN SPACE-BOT 🚀**:\n\n╭━━━━━━━━━━━━━━━━━━━━╮\n" f"-> `Penggunaan Dyno ` **{ALIVE_NAME}**:\n" f" •**0 jam - " f"0 menit - 0%**" "\n ◐━─━─━─━─━──━─━─━─━─━◐\n" "-> `Sisa Penggunaan Bulan Ini`:\n" f" •**9999 jam - 9999 menit " f"- 100%**\n" "╰━━━━━━━━━━━━━━━━━━━━╯"
+    await typew.edit("**PENGGUNAAN SPACE-BOT 🚀**:\n\n╭━━━━━━━━━━━━━━━━━━━━╮\n" f"-> `Penggunaan Dyno ` **{ALIVE_NAME}**:\n" f" •**0 jam - " f"0 menit - 0%**" "\n ◐━─━─━─━─━──━─━─━─━─━◐\n" "-> `Sisa Penggunaan Bulan Ini`:\n" f" •**1000 jam - 0 menit " f"- 100%**\n" "╰━━━━━━━━━━━━━━━━━━━━╯"
                      )
 # @mixiologist
 
