@@ -104,7 +104,7 @@ async def typewriter(typew):
     sleep(1)
     await typew.edit(f"**GAUSAH SOK KERAS**")
     sleep(3)
-    await typew.edit("**KEPALA BAPAK LU GUA TAMPOL SWALLOW, MAU?")
+    await typew.edit("**KEPALA BAPAK LU GUA TAMPOL SWALLOW, MAU?**")
 
 
 @register(outgoing=True, pattern='^\\.O(?: |$)(.*)')
@@ -113,7 +113,7 @@ async def typewriter(typew):
     sleep(1)
     await typew.edit(f"**GAUSAH SOK KERAS**")
     sleep(3)
-    await typew.edit("`KEPALA BAPAK LU GUA TAMPOL SWALLOW, MAU?`")
+    await typew.edit("**KEPALA BAPAK LU GUA TAMPOL SWALLOW, MAU?**")
 
 
 @register(outgoing=True, pattern='^\\.j(?: |$)(.*)')
