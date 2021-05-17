@@ -44,6 +44,11 @@
       "description": "ChatID of the Log group. Set it to '0' if BOTLOG = False and/or if LOGSPAMMER = False.",
       "required": true
     },
+    "KAMPANG_TEKS_KUSTOM": {
+      "description": "isi aja udah ini buat kata kata di alive itu.",
+      "value": "∅ sᴘᴀᴄᴇ ᴜsᴇʀʙᴏᴛ ɪs ʀᴜɴɴɪɴɢ sᴜᴄᴄᴇsғᴜʟʟʏ ∅",
+      "required": false
+    },
     "CONSOLE_LOGGER_VERBOSE": {
       "description": "If you need verbosity on the console logging",
       "value": "False"
