@@ -83,7 +83,7 @@ async def typewriter(typew):
     sleep(1)
     await typew.edit(f"**sᴀʟᴀᴍ ᴅᴜʟᴜ, ʙɪᴀʀ sᴏᴘᴀɴ ㋛**")
     sleep(3)
-    await typew.edit("`السَّلاَمُ عَلَيْكُمْ وَرَحْمَةُ اللهِ وَبَرَكَاتُهُ`")
+    await typew.edit("**ASSALAMUALAIKUM CALON MAYAT**")
 # Owner @mixiologist
 
 
