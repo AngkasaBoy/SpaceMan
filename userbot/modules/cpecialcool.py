@@ -19,24 +19,24 @@ async def _(event):
         return
     await event.edit("`proses dulu gaesss...`")
     d = os.path.join("resources/extras", "ul.mp3")
-    await event.edit("`Download Duluu... Berikan waktu bentar   ..`")
+    await event.edit("`Download Duluu... Berikan waktu bentarrr..`")
     await event.client.download_media(ureply, d)
-    await event.edit("`Done.. Now reply to video In which u want to add that Audio`")
+    await event.edit("`Berhasil. Sekarang Balas Pada Video Yang Ingin Ditambakan Audio Tadi.`")
 
 
 @register(outgoing=True, pattern="^.addaudio(?: |$)(.*)", disable_errors=True)
 async def _(event):
     ureply = await event.get_reply_message()
     if not (ureply and ("video" in ureply.document.mime_type)):
-        await event.edit("`Reply To Gif/Video In which u want to add audio.`")
+        await event.edit("`Balas Pada Gif/Video Yang Ingin Ditambahkan Suara.`")
         return
-    xx = await event.edit("`processing...`")
+    xx = await event.edit("`prosesss...`")
     ultt = await ureply.download_media()
     ls = os.listdir("resources/extras")
     z = "ul.mp3"
     x = "resources/extras/ul.mp3"
     if z not in ls:
-        await event.edit("`First reply an audio with .aw`")
+        await event.edit("`Pertama Balas Pada Suara Dengan .aw`")
         return
     video = m.VideoFileClip(ultt)
     audio = m.AudioFileClip(x)
