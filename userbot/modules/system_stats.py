@@ -236,7 +236,7 @@ async def amireallyalive(alive):
         f"{KAMPANG_TEKS_KUSTOM}\n"
         f"**━━━━━━━━━━━━━━━━━━━━━━━━**\n\n"
         f"⫸ **sᴘᴀᴄᴇɴᴀᴍᴇ**     \n   ➲ `{DEFAULTUSER}` \n"
-        f"⫸ **ᴜsᴇʀɴᴀᴍᴇ** \n   ➲ `@{user.username}` \n"
+        f"⫸ **ᴜsᴇʀɴᴀᴍᴇ** \n   ➲ @{user.username} \n"
         f"⫸ **ᴛᴇʟᴇᴛʜᴏɴ** \n   ➲ `Versi {version.__version__}` \n"
         f"⫸ **ᴘʏᴛʜᴏɴ**   \n   ➲ `Versi {python_version()}` \n"
         f"⫸ **ʙᴏᴛ ᴠᴇʀsɪᴏɴ**\n   ➲ `{BOT_VER}` \n"
