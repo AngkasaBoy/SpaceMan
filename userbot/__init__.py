@@ -327,7 +327,7 @@ with bot:
 
 
 async def check_alive():
-    await bot.send_message(BOTLOG_CHATID, "```SPACE-BOT 🚀\nTELAH DIAKTIFKAN```")
+    await bot.send_message(BOTLOG_CHATID, "```SPACE-BOT 🚀\nMENYALA ANJENGGG🔥\nSUPPORT KONTOLLL @storyangkasa```")
     return
 
 with bot:
@@ -398,7 +398,7 @@ with bot:
         @tgbot.on(events.NewMessage(pattern="/start"))
         async def handler(event):
             if event.message.from_id != uid:
-                await event.reply("I'm [SPACE BOT](https://github.com/AngkasaBoy/Space-Bot) modules helper...\nplease make your own bot, don't use mine 😋")
+                await event.reply("Halo Kontol Gua [SPACE BOT](https://github.com/AngkasaBoy/Space-Bot) Bantuan Modul...\nGausa Make Gua, Buat Bot Lu Sendiri Ngentot Di @rebellionnss")
             else:
                 await event.reply(f"`Hey {ALIVE_NAME}\n\nGua Bekerja Untuk Lu :)`")
 
