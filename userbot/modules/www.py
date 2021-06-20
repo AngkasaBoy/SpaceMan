@@ -40,7 +40,60 @@ async def get_readable_time(seconds: int) -> str:
 
     return up_time
 
+@register(outgoing=True, pattern="^.sping$")
+async def redis(pong):
+    """ For .ping command, ping the userbot from any chat.  """
+    await get_readable_time((time.time() - StartTime))
+    start = datetime.now()
+    await pong.edit("__Sabar Asu.__")
+    await pong.edit("__Sabar Asu..__")
+    await pong.edit("__Sabar Asu...__")
+    await pong.edit("__Sabar Asu....__")
+    await pong.edit("__Loading Anjeng.__")
+    await pong.edit("__Loading Anjeng..__")
+    await pong.edit("__Loading Anjeng...__")
+    await pong.edit("__DUAAAARRRRRRR....__")
+    await pong.edit("__DUAAAARRR MEMEKKKKK!!__")
+    await pong.edit("😠")
+    await asyncio.sleep(3)
+    end = datetime.now()
+    duration = (end - start).microseconds / 1000
+    await pong.edit(f"**╭━━━━━━━━━━━━━━━━━╮** \n"
+                    f"**        {REPO_NAME}** \n"
+                    f"**  ✠╼━━━━━━❖━━━━━━━✠** \n"
+                    f"**        • SINYAL    :** `%sms` \n"
+                    f"**        • PEMILIK   :** `{ALIVE_NAME}` \n"
+                    f"**        • VERSI BOT :** `7.0` \n"
+                    f"**╰━━━━━━━━━━━━━━━━━╯** \n" % (duration))
 
+
+@register(outgoing=True, pattern="^.sping$")
+async def redis(pong):
+    """ For .ping command, ping the userbot from any chat.  """
+    uptime = await get_readable_time((time.time() - StartTime))
+    start = datetime.now()
+    await pong.edit("__SABAR ANJENGGG.__")
+    await pong.edit("__SABAR ANJENGGG..__")
+    await pong.edit("__SABAR ANJENGGG...__")
+    await pong.edit("__TUNGGU BENTARAN.__")
+    await pong.edit("__TUNGGU BENTARAN..__")
+    await pong.edit("__OHHH YEAHH BABYYY...__")
+    await pong.edit("__OHHH YEAHHH BABYYY.__")
+    await pong.edit("__OHHHH IAM COMINGGG..__")
+    await pong.edit("__DUAAARRRR CROOTT MEMEKKK...__")
+    await pong.edit("🤯")
+    await asyncio.sleep(2)
+    end = datetime.now()
+    duration = (end - start).microseconds / 1000
+    await pong.edit(f"╭✠╼━━━━━━❖━━━━━━━✠╮\n"
+                    f"┣[•**MEKI PING!!**\n"
+                    f"┣[•__SINYAL MEK__    __:__ "
+                    f"`%sms` \n"
+                    f"┣[•__Uptime__ __:__ "
+                    f"`{uptime}` \n"
+                    f"╰✠╼━━━━━━❖━━━━━━━✠╯\n" % (duration))    
+    
+    
 @register(outgoing=True, pattern="^.speed$")
 async def speedtst(spd):
     """ For .speed command, use SpeedTest to check server speeds. """
@@ -54,13 +107,13 @@ async def speedtst(spd):
     result = test.results.dict()
 
     await spd.edit("`"
-                   "Started at "
+                   "Belum Meninggal Sejak "
                    f"{result['timestamp']} \n\n"
-                   "Download "
+                   "Download Bokep "
                    f"{speed_convert(result['download'])} \n"
-                   "Upload "
+                   "Upload Video 18+"
                    f"{speed_convert(result['upload'])} \n"
-                   "Ping "
+                   "PINGASUUU "
                    f"{result['ping']} \n"
                    "ISP "
                    f"{result['client']['isp']}"
@@ -69,7 +122,7 @@ async def speedtst(spd):
 
 def speed_convert(size):
     """
-    Hi human, you can't read bytes?
+    Hi manusia bodoh, Lu gabisa baca bytes?
     """
     power = 2**10
     zero = 0
@@ -101,7 +154,7 @@ async def pingme(pong):
     await pong.edit("`Ping!\n%sms`" % (duration))
 
 CMD_HELP.update(
-    {"ping": "`.ping`\
+    {"ping": "`.ping` ; `.sping` ; `.xping`\
     \nUsage: Shows how long it takes to ping your bot.\
     \n\n`.speed`\
     \nUsage: Does a speedtest and shows the results.\
